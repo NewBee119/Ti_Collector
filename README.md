@@ -1,5 +1,7 @@
 # Ti_Collecter
 一波公开来源的威胁情报收集
+我们收集了一些开源的黑名单网站如下。
+
 https://www.badips.com/get/list/any/2?age=7d
 https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/botscout_1d.ipset
 http://danger.rulez.sk/projects/bruteforceblocker/blist.php
