@@ -1,7 +1,7 @@
 # Ti_Collecter
-我们收集了一些开源的黑名单网站,把他们收集起来。
+我们收集了一些开源的黑名单网站,把这些网站中的数据爬取整理存储下来。
 
-http://www.nothink.org/blacklist/blacklist_ssh_all.txt
+
 # BlackListSpier
   一个爬取开源黑名单网站的爬虫，该网站为https://iplists.firehol.org 
   我们爬取了它的所有黑名单，共计900000+条。该网站中的黑名单更新频率高、可信度高，是一个很好的来源。
