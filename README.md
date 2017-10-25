@@ -7,4 +7,5 @@
   用来爬取https://badcyber.com 该网站不定期发布与安全相关的文章，我们主要爬取了这个网站上的有关其他网站的链接，通过这些链接发现新的威胁情报来源
 # request.py
   是查询dns记录的脚本 使用时要将dns_sniffer生成的待查文件放入同一个文件夹中。直接运行该脚本即可
-# dns_sniffer是捕获DNS请求包的程序，可以使用run.py启动
+# dns_sniffer
+  是捕获DNS请求包的程序，可以使用run.py启动
