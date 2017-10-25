@@ -1,0 +1,99 @@
+
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.55786 	 114.114.114.114.53		15:04:24.138550  	settings-win.data.microsoft.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.52048 	 114.114.114.114.53		15:04:32.723153  	rq.drcct.cloud.duba.net
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.52048 	 101.226.4.6.53		15:04:33.723302  	rq.drcct.cloud.duba.net
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.50186 	 101.226.4.6.53		15:04:36.818110  	imgcache.qq.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.64331 	 106.38.187.101.53		15:04:37.426541  	˜∂™$25mºvÔ√ñÏ.
+       IP Source              Dns Server                  Time                 DNS
+    106.38.187.101.53 	 192.168.9.72.64331		15:04:37.472705  	Idè[[¯.0H}âÖ.
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.50188 	 101.226.4.6.53		15:04:38.430015  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.50189 	 8.8.8.8.53		15:04:38.430146  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.50191 	 8.8.4.4.53		15:04:39.440583  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.50195 	 101.226.4.6.53		15:04:46.495641  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.50196 	 8.8.4.4.53		15:04:46.495802  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.55194 	 101.226.4.6.53		15:04:50.858978  	www.qq.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.60758 	 101.226.4.6.53		15:04:52.188793  	plugin.browser.qq.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.45.49336 	 114.114.114.114.53		15:04:54.485889  	teredo.ipv6.microsoft.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.64961 	 101.226.4.6.53		15:04:56.452483  	stdl.qq.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.58580 	 101.226.4.6.53		15:04:58.313162  	pcbrowser.dd.qq.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.58582 	 101.226.4.6.53		15:05:16.499398  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.58583 	 8.8.4.4.53		15:05:16.499542  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.63770 	 101.226.4.6.53		15:05:20.856992  	rm.api.weibo.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.59633 	 101.226.4.6.53		15:05:32.578463  	imgcache.qq.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.64331 	 106.38.187.101.53		15:05:34.018972  	V™-uîKà∏ﬂÔöÅV.
+       IP Source              Dns Server                  Time                 DNS
+    106.38.187.101.53 	 192.168.9.72.64331		15:05:34.071042  	Idè[[¯.0H}âÖ.
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.52183 	 101.226.4.6.53		15:05:34.214891  	cyrenepictures.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.54742 	 101.226.4.6.53		15:05:46.432662  	cm.browser.qq.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.54720 	 101.226.4.6.53		15:05:46.442588  	www.weibo.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.54723 	 101.226.4.6.53		15:05:49.380515  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.54724 	 8.8.8.8.53		15:05:49.380824  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.63979 	 101.226.4.6.53		15:05:49.447872  	www.sogou.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.56625 	 101.226.4.6.53		15:05:49.449929  	config.browser.qq.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.56630 	 101.226.4.6.53		15:05:54.634916  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.56631 	 8.8.8.8.53		15:05:54.635061  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.41.36204 	 114.114.114.114.53		15:06:14.759532  	productsearch.ubuntu.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.41.36204 	 192.168.9.253.53		15:06:14.759597  	productsearch.ubuntu.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.41.46720 	 192.168.9.253.53		15:06:14.759655  	productsearch.ubuntu.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.41.12245 	 192.168.9.253.53		15:06:14.765359  	productsearch.ubuntu.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.41.37687 	 192.168.9.253.53		15:06:14.765424  	productsearch.ubuntu.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.56633 	 101.226.4.6.53		15:06:24.640174  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.56634 	 8.8.8.8.53		15:06:24.640286  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.56636 	 101.226.4.6.53		15:06:37.017065  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.56637 	 8.8.4.4.53		15:06:37.017249  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.49429 	 101.226.4.6.53		15:06:56.575483  	imgcache.qq.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.45.56346 	 114.114.114.114.53		15:07:20.660702  	sconf.f.360.cn
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.45.59368 	 114.114.114.114.53		15:07:20.812305  	cl.vd.f.360.cn
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.49431 	 101.226.4.6.53		15:07:24.644719  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.49432 	 8.8.8.8.53		15:07:24.644900  	google.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.51569 	 101.226.4.6.53		15:07:34.701001  	pub.idqqimg.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.53404 	 101.226.4.6.53		15:07:42.528929  	client.show.qq.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.55187 	 101.226.4.6.53		15:07:42.528929  	imgcache.qq.com
+       IP Source              Dns Server                  Time                 DNS
+    192.168.9.72.62809 	 101.226.4.6.53		15:07:46.287614  	music.163.com
