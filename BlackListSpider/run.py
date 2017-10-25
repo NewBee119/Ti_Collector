@@ -1,9 +1,8 @@
 import os
 path = os.getcwd()
+path = path+'/script'
 filelist = os.listdir(path)
-filelist.remove('run.py')
 filelist.remove('download.py')
-filelist.remove('TiDB.sql')
 try:
 	filelist.remove('download.pyc')
 except:
@@ -17,9 +16,11 @@ try:
 except:
 	pass
 for each_py in filelist:
-	command = 'python %s'%each_py
-	print command
-	os.system(command)
-
-
+	try:
+		command = 'python script/%s'%each_py
+		print command
+		os.system(command)
+	except:
+		print 'error in script :',each_py
+		print 'run another script'
 print filelist
