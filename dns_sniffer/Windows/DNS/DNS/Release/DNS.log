@@ -1,0 +1,18 @@
+﻿生成启动时间为 2017/10/25 9:49:21。
+项目“C:\Users\FDD\documents\visual studio 2013\Projects\DNS\DNS\DNS.vcxproj”在节点 2 上(Rebuild 个目标)。
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /D WPCAPL /D HAVE_REMOTE /D _XKEYCHECK_H /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\DNS.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+  stdafx.cpp
+  C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /D WPCAPL /D HAVE_REMOTE /D _XKEYCHECK_H /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\DNS.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DNS.cpp
+  DNS.cpp
+Link:
+  C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\FDD\documents\visual studio 2013\Projects\DNS\Release\DNS.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\FDD\Desktop\WpdPack_4_1_2(1)\WpdPack\Lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib wpcap.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\FDD\documents\visual studio 2013\Projects\DNS\Release\DNS.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\FDD\documents\visual studio 2013\Projects\DNS\Release\DNS.lib" /MACHINE:X86 /SAFESEH Release\DNS.obj
+  Release\stdafx.obj
+  正在生成代码
+  已完成代码的生成
+  DNS.vcxproj -> C:\Users\FDD\documents\visual studio 2013\Projects\DNS\Release\DNS.exe
+已完成生成项目“C:\Users\FDD\documents\visual studio 2013\Projects\DNS\DNS\DNS.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.85

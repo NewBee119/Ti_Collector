@@ -6,6 +6,6 @@ s=platform.system()
 
 if   cmp(s,"Windows")==0:
      #win32api.ShellExecute(0,'open','.\dns_sniffer.exe','','',1)
-     os.system("dns_sniffer.exe")
+     os.system(".\\Windows\\DNS\\Release\\DNS.exe")
 elif cmp(s,"Linux")==0:
-     os.system("./dns")
+     os.system(".//Linux//dns")
