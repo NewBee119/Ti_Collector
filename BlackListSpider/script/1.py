@@ -2,7 +2,7 @@
 #source :https://iplists.firehol.org
 #source ID:1
 #IP type
-#date:2017-10-9
+#date:2017-10-26
 
 import urllib2
 import re
@@ -98,10 +98,9 @@ if __name__ == '__main__':
 	#get all the file in the list except 46.py
 	PATH_before = os.getcwd()
 	s_before = os.listdir(PATH_before.encode('utf-8'))
-	s_before.remove('1.py')
-	for each in s_before:
-		os.remove(each)
-
+	# s_before.remove('1.py')
+	# for each in s_before:
+	# 	os.remove(each)
 	GetThePage('http://iplists.firehol.org/all-ipsets.json','data','20170925','json')
 	global page
 	DisposePage('data_20170925.json')
@@ -125,8 +124,9 @@ if __name__ == '__main__':
 	print 'DATABASE'
 	PATH = os.getcwd()
 	s = os.listdir(PATH.encode('utf-8'))
-	s.remove('1.py')
-	s.remove('data_20170925.json')#then we get all the revoled files' name
+	for each in s_before:
+		s.remove(each)
+	s.remove('data_20170925.json')
 	FILE = open('FILE.txt','w')
 	for eachfile in s:
 		FILE.write(eachfile+'\n')#? '\n'
@@ -135,7 +135,7 @@ if __name__ == '__main__':
 	file_list = open('FILE.txt','r')
 	for eachfile in file_list:
 		# #insert data into 'ip_table' table
-		db = MySQLdb.connect(user='',db='',passwd='',host='',charset='utf8')#在相应位置填上你的数据库信息
+		db = MySQLdb.connect(user='root',db='TiDB',passwd='123456',host='192.168.9.12',charset='utf8')
 		cursor = db.cursor()
 		eachfile= eachfile.strip('\n')
 		print 'file :',file
@@ -164,5 +164,8 @@ if __name__ == '__main__':
 						cursor.execute("REPLACE INTO ip_table(ip,update_time,source,stamp) VALUES('%s','%s','%s','%s')" % (ip,update_time,source_id,stamp))
 		db.commit()
 		db.close()
-
-exit()
+	s.append('data_20170925.json')
+	s.append('FILE.txt')
+	for each in s:
+		os.remove(each)
+	exit()
