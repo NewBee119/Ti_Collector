@@ -3,7 +3,8 @@
 	通过指令 python run.py  ，调用scrip目录下的脚本文件，通过脚本将feed下的威胁情报录入数据库。 
 	由于网络问题，个别feed网站不可到达而出现timeout报错
 	以下是run.py的运行结果
-	![run.py的运行结果](https://github.com/scu-igroup/Ti_Collector/blob/master/Image/run.py%E6%88%AA%E5%9B%BE.png)
+  ![run.py的运行结果](https://github.com/scu-igroup/Ti_Collector/blob/master/Image/run.py%E6%88%AA%E5%9B%BE.png)
+
 
 # scripts目录下：
 	（1）相关feed的爬虫脚本；
