@@ -1,6 +1,7 @@
 # ThreatFeedSpider
 # run.py 
-	通过指令 python run.py  ，调用scrip目录下的脚本文件，通过脚本将feed下的威胁情报录入数据库。
+	通过指令 python run.py  ，调用scrip目录下的脚本文件，通过脚本将feed下的威胁情报录入数据库。 
+	由于网络问题，个别feed网站不可到达而出现timeout报错	
 	
 
 # scripts目录下：
