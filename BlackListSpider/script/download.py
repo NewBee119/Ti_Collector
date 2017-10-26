@@ -1,6 +1,5 @@
 # encoding=utf8
-#aurhor :LiMengming
-#date:2017-10-19
+#date:2017-10-26
 #domain type
 
 import MySQLdb
@@ -56,12 +55,23 @@ def download_domain(source,stamp,url):
 		if '#' in eachline:
 			continue
 		else:
+			ipgroup = get_ip(eachline)
+			if ipgroup !='None':
+				for ip in ipgroup:
+					if len(ip)<7:
+						continue
+					cursor.execute("REPLACE INTO ip_table(ip,update_time,source,stamp) VALUES('%s','%s','%s','%s')" % (ip,update_time,str(source),stamp))	
+				continue
 			try:
 				eachline_parameter = eachline.split()[1]
 				domain = eachline_parameter.strip('\n').strip()
 				cursor.execute("REPLACE INTO domain_table(domain,update_time,source,stamp) VALUES('%s','%s','%s','%s')" % (domain,update_time,source,stamp))
 			except:
-				continue
+				try:
+					domain = eachline.strip()
+					cursor.execute("REPLACE INTO domain_table(domain,update_time,source,stamp) VALUES('%s','%s','%s','%s')" % (domain,update_time,source,stamp))
+				except:
+					print 'error in :',eachline
 	db.commit()
 	db.close()
 	fo.close()
@@ -127,7 +137,7 @@ def download_url(source,stamp,url):
 			if 'updated' in eachline:
 				update_time = time_formation(eachline)
 		else:
-			url =url.replace("'", "\\\'")
+			url =eachline.replace("'", "\\\'")
 			cursor.execute("REPLACE INTO url_table(url_index,url,update_time,source,stamp) VALUES('%s','%s','%s','%s','%s')" % (url[0:50],url,update_time,str(source),stamp))
 	db.commit()
 	db.close()
@@ -154,7 +164,10 @@ def download_ip_2(source,stamp,url):
 		if ipgroup == 'None':
 			continue
 		else:
-			update_time = time_formation(eachline)
+			try:
+				update_time = time_formation(eachline)
+			except:
+				pass
 			for ip in ipgroup:
 				if len(ip)<7:
 					continue

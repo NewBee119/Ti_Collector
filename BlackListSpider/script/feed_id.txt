@@ -24,7 +24,6 @@
 35:https://zeustracker.abuse.ch/blocklist.php?download=compromised
 37:https://reputation.alienvault.com/reputation.generic
 38:http://www.ciarmy.com/list/ci-badguys.txt
-39:http://talosintel.com/files/additional_resources/ips_blacklist/ip-filter.blf
 40:https://reputation.alienvault.com/reputation.generic
 41:http://www.nothink.org/blacklist/blacklist_malware_dns.txt
 42:http://www.nothink.org/blacklist/blacklist_malware_http.txt
