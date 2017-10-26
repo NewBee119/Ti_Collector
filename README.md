@@ -1,5 +1,8 @@
-# Ti_Collecter
-  我们收集了一些开源的黑名单网站,把这些网站中的数据爬取整理存储下来。
+# Ti_Collector  
+    Ti_Collector为Threat Intelligence Collector，主要关注网上公开的信誉类威胁情报和事件类威胁情报。  
+    信誉类威胁情报主要来源于一些安全社区的分享；事件类威胁情报主要来源于安全企业的咨询分享.     
+    这些威胁情报数据通过爬虫手段，经分类处理后自动存入到数据库中，以构建自身的威胁情报库.  
+  
 ## BlackListSpier
   一个爬取开源黑名单网站的爬虫，该网站为https://iplists.firehol.org 
   
