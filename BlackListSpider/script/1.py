@@ -33,7 +33,6 @@ def GetThePage(url,name,time,fm):
 			request2 = urllib2.Request(URL,None,headers)
 			response2 = urllib2.urlopen(request2,timeout=10)
 		except urllib2.HTTPError as e:
-			print url
 			pass
 		except:
 			global thnum
@@ -64,7 +63,6 @@ def DisposePage(PageName):
 		downurl = "https://iplists.firehol.org/files/%s.netset"%name
 		time = str(datetime.datetime.utcfromtimestamp(DownData[count]['updated']/1000))
 		doc = {'name':name,'downurl':downurl,'time':time}
-		print doc
 		DownList.put(doc)
 
 #多线程下载最终的文件
@@ -111,7 +109,7 @@ if __name__ == '__main__':
 		thnum += 1
 		try:
 			t.start()
-			print "start"
+			print "start thread"
 		except:
 			pass
 	while True:
@@ -135,7 +133,7 @@ if __name__ == '__main__':
 	file_list = open('FILE.txt','r')
 	for eachfile in file_list:
 		# #insert data into 'ip_table' table
-		db = MySQLdb.connect(user='root',db='TiDB',passwd='123456',host='192.168.9.12',charset='utf8')
+		db = MySQLdb.connect(user='root',db='TiDB',passwd='123456',host='192.168.9.223',charset='utf8')
 		cursor = db.cursor()
 		eachfile= eachfile.strip('\n')
 		print 'file :',file
