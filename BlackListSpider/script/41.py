@@ -9,4 +9,4 @@ import download
 source = '41'
 stamp  = 'malware'
 url    = 'http://www.nothink.org/blacklist/blacklist_malware_http.txt'
-download.download_ip(source, stamp, url)
+download.download_domain(source, stamp, url)
