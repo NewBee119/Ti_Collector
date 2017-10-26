@@ -23,4 +23,3 @@ for each_py in filelist:
 	except:
 		print 'error in script :',each_py
 		print 'run another script'
-print filelist
