@@ -5,7 +5,6 @@
 9:http://cinsscore.com/list/ci-badguys.txt
 10:https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/cruzit_web_attacks.ipset
 12:http://cybersweat.shop/iprep/iprep_ramnode.txt
-14:https://isc.sans.edu/feeds/suspiciousdomains_Low.txt
 15:http://blocklist.greensnow.co/greensnow.txt
 18:https://www.malwaredomainlist.com/hostslist/hosts.txt
 19:https://myip.ms/files/blacklist/htaccess/latest_blacklist.txt

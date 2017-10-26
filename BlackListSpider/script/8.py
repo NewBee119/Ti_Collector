@@ -11,4 +11,4 @@ source = '8'
 url = 'http://danger.rulez.sk/projects/bruteforceblocker/blist.php'
 stamp = 'BlackList'
 
-download.download_ip(source, stamp, url)
+download.download_ip_2(source, stamp, url)

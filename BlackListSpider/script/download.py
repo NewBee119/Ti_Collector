@@ -97,6 +97,8 @@ def download_ip(source,stamp,url):
 		else:
 			ipgroup = get_ip(eachline)
 			for ip in ipgroup:
+				if len(ip)<7:
+					continue
 				cursor.execute("REPLACE INTO ip_table(ip,update_time,source,stamp) VALUES('%s','%s','%s','%s')" % (ip,update_time,str(source),stamp))
 	db.commit()
 	db.close()
@@ -127,6 +129,36 @@ def download_url(source,stamp,url):
 		else:
 			url =url.replace("'", "\\\'")
 			cursor.execute("REPLACE INTO url_table(url_index,url,update_time,source,stamp) VALUES('%s','%s','%s','%s','%s')" % (url[0:50],url,update_time,str(source),stamp))
+	db.commit()
+	db.close()
+	fo.close()
+
+def download_ip_2(source,stamp,url):
+	file = open('tmp.txt','w')
+	#claw the web and download the web-file
+	try:
+		resp = urlopen(url)
+		html_data = resp.read().decode('utf-8')
+		file.write(html_data)
+	except Exception,e:
+		print 'ERROR :',e
+		exit()
+	file.close()
+	#Parse the file and get eachline into the MySQL database
+	update_time = time.ctime().encode( "utf-8")
+	fo = open('tmp.txt','r')
+	db = MySQLdb.connect(user='root',db='TiDB',passwd='123456',host='192.168.9.223',charset='utf8')
+	cursor = db.cursor()
+	for eachline in fo :
+		ipgroup = get_ip(eachline)
+		if ipgroup == 'None':
+			continue
+		else:
+			update_time = time_formation(eachline)
+			for ip in ipgroup:
+				if len(ip)<7:
+					continue
+				cursor.execute("REPLACE INTO ip_table(ip,update_time,source,stamp) VALUES('%s','%s','%s','%s')" % (ip,update_time,str(source),stamp))
 	db.commit()
 	db.close()
 	fo.close()
