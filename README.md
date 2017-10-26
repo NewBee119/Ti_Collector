@@ -12,3 +12,9 @@
   是捕获DNS请求包的程序，可以使用run.py启动
   其整个流程如下图所示。
   ![流程图](https://github.com/scu-igroup/Ti_Collecter/raw/master/images/流程.png)
+  
+  最后的结果如下图所示。
+  
+  ![结果](https://github.com/scu-igroup/Ti_Collecter/raw/master/images/fin.png)
+  
+  同时会生成一个文件，把匹配到的结果存储在其中。
