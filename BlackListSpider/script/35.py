@@ -9,4 +9,4 @@ import download
 stamp  = 'BlackList'
 source = '37'
 url    = 'https://reputation.alienvault.com/reputation.generic'
-download.download_domain(source, stamp, url)
+download.download_domain_2(source, stamp, url)
