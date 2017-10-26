@@ -7,3 +7,17 @@ BlackListSpider
 		（3）采用MySQL数据库收录威胁情报，在使用本系统采集数据时，请自行修改1.py脚本和download.py脚本内与数据库有关的语句和参数。
 		
 3. MySQL-sql：TiDB.sql文件，构建数据库以及数据库表格。
+
+Python依赖库：
+MySQLdb
+sys 
+time
+re
+urlib
+urllib2
+threading
+datetime
+Queue
+json
+socket
+os
