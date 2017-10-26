@@ -101,7 +101,6 @@ def download_ip(source,stamp,url):
 			if 'updated' in eachline:
 				try:
 					update_time = time_formation(eachline)
-					print 'update_time',update_time
 				except:
 					print 'error in line :',eachline
 					continue
