@@ -59,7 +59,7 @@ def request_domain(Domain_File):
 	domain_file.close()
 	return True
 if __name__ == '__main__':
-	if Parse_DnsFile('dns_sample.txt','domain_file.txt'):
+	if Parse_DnsFile('dns.txt','domain_file.txt'):
 		request_domain('domain_file.txt')
 
 
