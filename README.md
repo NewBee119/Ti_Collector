@@ -35,7 +35,7 @@ ThreatFeedSpider
 
 ![run](https://github.com/scu-igroup/Ti_Collecter/raw/master/Images/run.py截图.png)
 
-dns_sniffer生成的文件dns.txt
+DNS-Sniffer生成的文件dns.txt
 
 ![dns.txt](https://github.com/scu-igroup/Ti_Collecter/raw/master/Images/dns.png)
 
