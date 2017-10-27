@@ -21,13 +21,16 @@
   是查询dns记录的脚本，使用时要将dns_sniffer生成的待查文件放入同一个文件夹中。直接运行该脚本即可。
   
   如果用户修改了数据库的信息，要在request.py中的相应位置修改数据库信息。
-## dns_sniffer
-  是捕获DNS请求包的程序，可以使用run.py启动。
-  其整个流程如图所示。
+## DNS-Sniffer
+  是捕获DNS请求包的程序，用C写成，内涵源码和编译好的程序，可以直接使用run.py启动。
   
-  ![流程图](https://github.com/scu-igroup/Ti_Collecter/raw/master/Images/流程.png)
+  
 # Screenshots
 ---
+捕获和查询DNS纪录流程
+
+  ![流程图](https://github.com/scu-igroup/Ti_Collecter/raw/master/Images/流程.png)
+
 ThreatFeedSpider
 
 ![run](https://github.com/scu-igroup/Ti_Collecter/raw/master/Images/run.py截图.png)
