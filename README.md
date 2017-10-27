@@ -25,18 +25,18 @@
   是捕获DNS请求包的程序，可以使用run.py启动。
   其整个流程如图所示。
   
-  ![流程图](https://github.com/scu-igroup/Ti_Collecter/raw/master/images/流程.png)
+  ![流程图](https://github.com/scu-igroup/Ti_Collecter/raw/master/Images/流程.png)
 # Screenshots
 ---
 ThreatFeedSpider
 
-![run](https://github.com/scu-igroup/Ti_Collecter/raw/master/images/run.py截图.png)
+![run](https://github.com/scu-igroup/Ti_Collecter/raw/master/Images/run.py截图.png)
 
 dns_sniffer生成的文件dns.txt
 
-![dns.txt](https://github.com/scu-igroup/Ti_Collecter/raw/master/images/dns.png)
+![dns.txt](https://github.com/scu-igroup/Ti_Collecter/raw/master/Images/dns.png)
 
 request.py
 
-![结果](https://github.com/scu-igroup/Ti_Collecter/raw/master/images/fin.png)
+![结果](https://github.com/scu-igroup/Ti_Collecter/raw/master/Images/fin.png)
   
