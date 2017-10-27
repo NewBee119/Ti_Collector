@@ -17,19 +17,21 @@
 ## ThreatArticleSpider
   处理事件类威胁情报，在现阶段只有一个爬取文章链接的爬虫ThreatArticleSpider.py后续会陆续增加爬取链接的脚本和从文章中提取相应IoC信息的脚本。
   
-## request.py
-  是查询dns记录的脚本，使用时要将dns_sniffer生成的待查文件放入同一个文件夹中。直接运行该脚本即可。
-  
-  如果用户修改了数据库的信息，要在request.py中的相应位置修改数据库信息。
+
 ## DNS-Sniffer
   是捕获DNS请求包的程序，用C写成，内涵源码和编译好的程序，可以直接使用run.py启动。
+  捕获和查询DNS纪录流程
+
+  ![流程图](https://github.com/scu-igroup/Ti_Collecter/raw/master/Images/流程.png)
   
+## request.py
+  是查询dns记录的脚本，使用时要将DNS-Sniffer生成的待查文件放入同一个文件夹中。直接运行该脚本即可。
+  
+  如果用户修改了数据库的信息，要在request.py中的相应位置修改数据库信息。  
   
 # Screenshots
 ---
-捕获和查询DNS纪录流程
 
-  ![流程图](https://github.com/scu-igroup/Ti_Collecter/raw/master/Images/流程.png)
 
 ThreatFeedSpider
 
