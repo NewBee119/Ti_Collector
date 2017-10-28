@@ -20,6 +20,7 @@ thnum = 0
 page = '' #存放被打开的网页
 DownList = Queue.Queue()
 queueLocker = threading.Lock()
+global COUNT
 COUNT = 0
 
 #取回页面并保存成文件
