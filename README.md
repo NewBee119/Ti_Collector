@@ -41,7 +41,7 @@
  
    		首先要运行sql目录下的建库脚本。
    		
-   		然后再运行RunThreatSpider.py之前，请自行修改1.py脚本和download.py脚本内与数据库有关的语句和参数。
+   		然后再运行RunThreatSpider.py之前，请自行修改60.py脚本和download.py脚本内与数据库有关的语句和参数。
    
   		在ThreatFeedSpider目录下，通过命令 python RunThreatSpider.py，调用scripts目录下的脚本文件，
   		
