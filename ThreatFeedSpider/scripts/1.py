@@ -127,7 +127,7 @@ if __name__ == '__main__':
 	s = os.listdir(PATH.encode('utf-8'))
 	for each in s_before:
 		s.remove(each)
-	s.remove('data_20170925.json')
+	s.remove('0.html')
 	FILE = open('FILE.txt','w')
 	for eachfile in s:
 		FILE.write(eachfile+'\n')#? '\n'
