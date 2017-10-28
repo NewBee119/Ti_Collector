@@ -131,3 +131,11 @@ request.py
 
 ![结果](https://github.com/scu-igroup/Ti_Collecter/raw/master/Images/fin.png)
   
+
+
+# 联系我们
+---
+有任何需要讨论的问题，不要犹豫，联系我们。
+
+邮箱:jeremytian1101@gmail.com
+  
