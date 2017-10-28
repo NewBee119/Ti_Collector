@@ -27,7 +27,7 @@
   
 * 环境要求
 
-  		测试计算机用的Ubuntu 16.04.1，python 2.7，MySQL 5.7.20
+  		测试计算机用的Ubuntu 16.04.1，Windows 10 x86_64，python 2.7，MySQL 5.7.20
   
   		python依赖环境为：MySQLdb
   
@@ -35,7 +35,7 @@
  
    		sql目录中的TiDB.sql文件，构建数据库以及数据库表格。
    
-   		测试使用MySQL数据库，测试及使用时请自行作出修改数据库参数。
+   		使用MySQL数据库时，请自行修改连接的数据库参数。
    
  * 使用
  
