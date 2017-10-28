@@ -9,7 +9,11 @@ warnings.filterwarnings("ignore")
 
 
 def Parse_DnsFile(dnsfile,domainfile):
-	DnsFile= open(dnsfile,'r')
+	try:
+		DnsFile= open(dnsfile,'r')
+	except:
+		print 'DNS file not found'
+		print 'The file can be generate from the file DNS-Sniffer/RunSniffer.py'
 	Domain_Collect = open(domainfile,'w')		
 	for line in DnsFile:
 		line = line.strip('\n')
@@ -27,8 +31,10 @@ def Parse_DnsFile(dnsfile,domainfile):
 	Domain_Collect.close()
 	return True
 
-def request_domain(Domain_File):
-	domain_file = open(Domain_File,'r')
+def request_domain(DomainFile,ResultFile):
+	domain_file = open(DomainFile,'r')
+	result_file = open(ResultFile,'w')
+	result_file .write("Domain 		  				stamp 				      source 						 			update_time")
 	db = MySQLdb.connect(user='root',db='TiDB',passwd='123456',host='192.168.9.12',charset='utf8')
 	cursor = db.cursor()
 	for domain in domain_file:
@@ -55,11 +61,17 @@ def request_domain(Domain_File):
 		print 'data update time :',update_time
 		print ''
 		print '#**********************************************************************************#'
+		Result = "%s 		  				%s 				      %s 						 			%s"%(domain,stamp,source,update_time)
+		result_file.write(Result)
 	db.close()
 	domain_file.close()
+	result_file.close()
 	return True
 if __name__ == '__main__':
-	if Parse_DnsFile('dns.txt','domain_file.txt'):
-		request_domain('domain_file.txt')
+	print "输入DNS_Sniffer生成的文件（当前路径下），如‘DNS.txt’"
+	rawfile = raw_input(">")
+	print '开始解析--------------->>>>>>>'
+	if Parse_DnsFile(rawfile,'domain_file.txt'):
+		request_domain('domain_file.txt','Result.txt')
 
 
