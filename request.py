@@ -5,9 +5,11 @@
 import MySQLdb
 
 import warnings
+
+import sys 
+reload(sys) 
+sys.setdefaultencoding('utf8') 
 warnings.filterwarnings("ignore")
-
-
 def Parse_DnsFile(dnsfile,domainfile):
 	try:
 		DnsFile= open(dnsfile,'r')
@@ -68,9 +70,11 @@ def request_domain(DomainFile,ResultFile):
 	result_file.close()
 	return True
 if __name__ == '__main__':
-	print "输入DNS_Sniffer生成的文件（当前路径下），如‘DNS.txt’"
+	s = "输入DNS_Sniffer生成的文件（当前路径下），如‘DNS.txt’"
+	print s.decode('utf-8').encode('gbk')
 	rawfile = raw_input(">")
-	print '开始解析--------------->>>>>>>'
+	s =  '开始解析--------------->>>>>>>'
+	print s.decode('utf-8').encode('gbk')
 	if Parse_DnsFile(rawfile,'domain_file.txt'):
 		request_domain('domain_file.txt','Result.txt')
 
