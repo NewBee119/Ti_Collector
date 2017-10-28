@@ -2,7 +2,7 @@
 #source :https://iplists.firehol.org
 #source ID:1
 #IP type
-#date:2017-10-27
+#date:2017-10-26
 
 import urllib2
 import re
@@ -118,7 +118,7 @@ if __name__ == '__main__':
 			pass
 	while True:
 		time.sleep(6)
-		if thnum == 1:
+		if thnum == 2:
 			break
 
 #将下载好的文件按时间、IP、来源存入数据库
