@@ -144,7 +144,7 @@ void packet_handler(u_char *arg, const struct pcap_pkthdr *pkthdr, const u_char 
 
 
    // f=fopen("./dns.txt","a+");
-    freopen("dns.txt","a+",stdout);
+    freopen("Dns.txt","a+",stdout);
 //    if(f==NULL)
 //	{
 //		printf("error");
