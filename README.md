@@ -66,7 +66,7 @@
 ## DNS-Sniffer
 * 说明
 
-  		DNS-Sniffer是用来捕获DNS请求包的程序，用C写成，内涵源码和编译好的程序，在Linux和Windows环境下可以直接使用RunSniffer.py启动。Windows下也可以直接运行DNS.exe
+  		DNS-Sniffer是用来捕获DNS请求包的程序，用C写成，内涵源码和编译好的程序，在Linux和Windows环境下可以直接使用RunSniffer.py启动。Windows下也可以直接运行DNS.exe。运行时会生成一个Dns.txt文件来存储DNS记录。
 
   
 * 环境要求
@@ -99,7 +99,7 @@
 
   		用来判断NDS-Sniffer捕获到的DNS纪录中是否有威胁情报中记录的恶意行为。
   
-  		在查询到有恶意DNS记录后会输出警告，脚本运行完后会生成一个结果文件domain_file.txt
+  		在查询到有恶意DNS记录后会输出警告，脚本运行完后会生成一个结果文件Result.txt
 
 * 环境要求
 
@@ -109,7 +109,7 @@
 
 * 使用
 
-  		使用时要将DNS-Sniffer生成的待查文件DNS.txt放入同一个目录下。进入该目录直接运行命令：python request.py即可。
+  		使用时要将DNS-Sniffer生成的待查文件Dns.txt放入同一个目录下。进入该目录直接运行命令：python request.py即可。
   
   		如果用户修改了数据库的信息，要在request.py中的相应位置修改数据库信息。  
   
