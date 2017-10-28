@@ -94,7 +94,9 @@
   2.Linux环境
   
   		安装libcap库，Ubuntu输入命令apt-get install libpcap-dev即可安装。
+  		
 		CentOS参考http://www.cnblogs.com/wawahaha/p/3821486.html
+		
 		编译：安装好库后，进入Linux文件夹下执行make就可生成可执行文件dns。
 		
 * 使用
