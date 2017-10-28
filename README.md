@@ -7,6 +7,10 @@
    这些威胁情报数据通过爬虫手段，经分类处理后自动存入到数据库中，以构建自身的威胁情报库。
    
    同时，我们提供一个捕获和查询本机DNS纪录中是否存在威胁行为的程序。
+   
+   整个流程如图所示。
+   
+   ![流程](https://github.com/scu-igroup/Ti_Collecter/raw/master/Images/流程.jpg)
   
 # Code Introduction
 ---
@@ -62,10 +66,8 @@
 ## DNS-Sniffer
 * 说明
 
-  		DNS-Sniffer是用来捕获DNS请求包的程序，用C写成，内涵源码和编译好的程序，在Linux和Windows环境下可以直接使用run.py启动。
-  捕获和查询DNS纪录流程
+  		DNS-Sniffer是用来捕获DNS请求包的程序，用C写成，内涵源码和编译好的程序，在Linux和Windows环境下可以直接使用RunSniffer.py启动。Windows下也可以直接运行DNS.exe
 
-  ![流程图](https://github.com/scu-igroup/Ti_Collecter/raw/master/Images/流程.png)
   
 * 环境要求
 
@@ -83,7 +85,7 @@
 		
 * 使用
 
-  		直接在同一目录下运行RunSniffer.py即可。
+  		直接在同一目录下运行RunSniffer.py即可。 Linux下需要以管理员权限运行
   
   		注意：
   
@@ -107,7 +109,7 @@
 
 * 使用
 
-  		使用时要将DNS-Sniffer生成的待查文件放入同一个目录下。进入该目录直接运行命令：python request.py即可。
+  		使用时要将DNS-Sniffer生成的待查文件DNS.txt放入同一个目录下。进入该目录直接运行命令：python request.py即可。
   
   		如果用户修改了数据库的信息，要在request.py中的相应位置修改数据库信息。  
   
