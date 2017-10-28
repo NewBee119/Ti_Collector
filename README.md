@@ -43,7 +43,9 @@
    		
    		然后再运行RunThreatSpider.py之前，请自行修改1.py脚本和download.py脚本内与数据库有关的语句和参数。
    
-  		在ThreatFeedSpider目录下，通过命令 python RunThreatSpider.py，调用scripts目录下的脚本文件，通过脚本将feed下的威胁情报录入数据库。
+  		在ThreatFeedSpider目录下，通过命令 python RunThreatSpider.py，调用scripts目录下的脚本文件，
+  		
+  		通过脚本将feed下的威胁情报录入数据库。
    
   		注：由于网络问题，个别feed网站不可到达而出现timeout报错。
 
@@ -51,7 +53,9 @@
 ## ThreatArticleSpider
 * 说明
 
-  		处理事件类威胁情报，在现阶段只有一个爬取文章链接的爬虫ThreatArticleSpider.py后续会陆续增加爬取链接的脚本和从文章中提取相应IoC信息的脚本。
+  		处理事件类威胁情报，在现阶段只有一个爬取文章链接的爬虫ThreatArticleSpider.py
+  		
+  		后续会陆续增加爬取链接的脚本和从文章中提取相应IoC信息的脚本。
   
 * 使用
 
@@ -68,15 +72,23 @@
 ## DNS-Sniffer
 * 说明
 
-  		DNS-Sniffer是用来捕获DNS请求包的程序，用C写成，内涵源码和编译好的程序，在Linux和Windows环境下可以直接使用RunSniffer.py启动。Windows下也可以直接运行DNS.exe。运行时会生成一个Dns.txt文件来存储DNS记录。
+  		DNS-Sniffer是用来捕获DNS请求包的程序，用C写成，内涵源码和编译好的程序，
+  		
+  		在Linux和Windows环境下可以直接使用RunSniffer.py启动。
+  		
+  		Windows下也可以直接运行DNS.exe。运行时会生成一个Dns.txt文件来存储DNS记录。
 
   
 * 环境要求
 
   1.Windows环境
   
- 		该程序要用到Winpcap，一般情况下都已经安装了，如果没有安装可以在Windows文件夹下找到它的安装文件WinPcap_4_1_2.exe(64)
+ 		该程序要用到Winpcap，一般情况下都已经安装了，如果没有安装可以在Windows文件夹下找到它的安装文件
+ 		
+ 		WinPcap_4_1_2.exe(64)
+ 		
   		VS中需配置项目属性 详情请参看：http://www.cnblogs.com/laddielan/p/5405534.html。
+  		
   		安装Winpcap并配置好项目属性后，打开源码用VS2013及以上版本直接编译生成即可。
   	
   2.Linux环境
@@ -91,7 +103,9 @@
   
   		注意：
   
-  		Winpcap和Libpcap这两个是必须安装的，不然既无法运行而且也无法编译源码生成可执行文件，python需要2.x版本，3.x版本运行RunSniffer.py会报错。
+  		Winpcap和Libpcap这两个是必须安装的，不然既无法运行而且也无法编译源码生成可执行文件，
+  		
+  		python需要2.x版本，3.x版本运行RunSniffer.py会报错。
 
   		Windows下电脑电源设置为从不休眠，因为休眠后会关闭嗅探器。
   
