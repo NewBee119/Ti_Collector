@@ -85,7 +85,7 @@
   
  		该程序要用到Winpcap，一般情况下都已经安装了，如果没有安装可以在Windows文件夹下找到它的安装文件
  		
- 		WinPcap_4_1_2.exe(64)
+ 		WinPcap_4_1_2.exe(64)；推荐使用本项目自带的WinPcap_4_1_2.exe(64)，以避免版本冲突。
  		
   		VS中需配置项目属性 详情请参看：http://www.cnblogs.com/laddielan/p/5405534.html。
   		
