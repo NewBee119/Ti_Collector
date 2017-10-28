@@ -72,7 +72,7 @@ def request_domain(DomainFile,ResultFile):
 if __name__ == '__main__':
 	s=platform.system()
 	if  cmp(s,"Windows")==0:
-		s = "输入DNS_Sniffer生成的文件（当前路径下），如‘DNS.txt’"
+		s = "输入DNS_Sniffer生成的文件（当前路径下），如‘Dns.txt’"
 		print s.decode('utf-8').encode('gbk')
 		rawfile = raw_input(">")
 		s =  '开始解析--------------->>>>>>>'
@@ -80,7 +80,7 @@ if __name__ == '__main__':
 		if Parse_DnsFile(rawfile,'domain_file.txt'):
 			request_domain('domain_file.txt','Result.txt')
 	else:
-		print "输入DNS_Sniffer生成的文件（当前路径下），如‘DNS.txt’"
+		print "输入DNS_Sniffer生成的文件（当前路径下），如‘Dns.txt’"
 		rawfile = raw_input(">")
 		print '开始解析--------------->>>>>>>'
 		if Parse_DnsFile(rawfile,'domain_file.txt'):
