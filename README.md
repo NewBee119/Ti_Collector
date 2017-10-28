@@ -43,7 +43,7 @@
    		
    		然后再运行RunThreatSpider.py之前，请自行修改1.py脚本和download.py脚本内与数据库有关的语句和参数。
    
-  		通过命令 python RunThreatSpider.py，调用scripts目录下的脚本文件，通过脚本将feed下的威胁情报录入数据库。
+  		在ThreatFeedSpider目录下，通过命令 python RunThreatSpider.py，调用scripts目录下的脚本文件，通过脚本将feed下的威胁情报录入数据库。
    
   		注：由于网络问题，个别feed网站不可到达而出现timeout报错。
 
