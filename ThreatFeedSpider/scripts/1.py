@@ -26,7 +26,7 @@ def GetThePage(url,name,time,fm):
 	headers = {'User-Agent' : 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'}
 	request = urllib2.Request(url, None, headers)
 	try:
-		response = urllib2.urlopen(request,timeout=10)
+		response = urllib2.urlopen(request,timeout=30)
 	except urllib2.HTTPError as e:
 		try:
 			URL = 'https://iplists.firehol.org/files/%s.ipset'%name
