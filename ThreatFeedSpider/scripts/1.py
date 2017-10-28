@@ -20,7 +20,7 @@ thnum = 0
 page = '' #存放被打开的网页
 DownList = Queue.Queue()
 queueLocker = threading.Lock()
-count = 0
+COUNT = 0
 
 #取回页面并保存成文件
 def GetThePage(url,name,time,fm):
@@ -41,8 +41,8 @@ def GetThePage(url,name,time,fm):
 			pass
 		else:
 			PAGE = response2.read()
-			File = open(r"%s.html"%count,'wb+')
-			count += 1
+			File = open(r"%s.html"%COUNT,'wb+')
+			COUNT += 1
 			File.write((PAGE))
 	except urllib2.URLError as e:
 		print e.reason
@@ -51,8 +51,8 @@ def GetThePage(url,name,time,fm):
 		global page
 		page = response.read()
 		filename = "%s_%s.%s"%(name,time,fm)
-		FILE = open(r"%s.html"%count,'wb+')
-		count += 1
+		FILE = open(r"%s.html"%COUNT,'wb+')
+		COUNT += 1
 		FILE.write(page)
 
 
@@ -101,6 +101,7 @@ if __name__ == '__main__':
 	# s_before.remove('1.py')
 	# for each in s_before:
 	# 	os.remove(each)
+	global COUNT
 	GetThePage('http://iplists.firehol.org/all-ipsets.json','data','20170925','json')
 	global page
 	DisposePage('data_20170925.json')
