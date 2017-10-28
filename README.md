@@ -10,7 +10,7 @@
    
    整个流程如图所示。
    
-   ![流程](https://github.com/scu-igroup/Ti_Collecter/raw/master/Images/流程.jpg)
+   ![流程](https://github.com/scu-igroup/Ti_Collecter/raw/master/Images/流程.png)
   
 # Code Introduction
 ---
