@@ -18,7 +18,7 @@ CREATE TABLE `url_table` (
 
 DROP TABLE IF EXISTS domain_table;
 CREATE TABLE `domain_table` (
-  `domain` VARCHAR(1000) NOT NULL,
+  `domain` VARCHAR(300) NOT NULL,
   `update_time` VARCHAR(50) NOT NULL,
   `source` VARCHAR(1000) NOT NULL,
   `stamp` VARCHAR(500) NOT NULL, 
