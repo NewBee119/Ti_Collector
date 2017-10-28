@@ -1,6 +1,6 @@
 #coding:utf-8
 #source :https://iplists.firehol.org
-#source ID:1
+#source ID:60
 #IP type
 #date:2017-10-26
 
@@ -100,9 +100,6 @@ if __name__ == '__main__':
 	#get all the file in the list except 46.py
 	PATH_before = os.getcwd()
 	s_before = os.listdir(PATH_before.encode('utf-8'))
-	# s_before.remove('1.py')
-	# for each in s_before:
-	# 	os.remove(each)
 	global COUNT
 	GetThePage('http://iplists.firehol.org/all-ipsets.json','data','20170925','json')
 	global page
@@ -122,7 +119,7 @@ if __name__ == '__main__':
 			break
 
 #将下载好的文件按时间、IP、来源存入数据库
-	source_id = '1'
+	source_id = '60'
 	PATH = os.getcwd()
 	s = os.listdir(PATH.encode('utf-8'))
 	for each in s_before:
