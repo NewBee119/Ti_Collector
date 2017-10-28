@@ -20,10 +20,10 @@ def Parse_DnsFile(dnsfile,domainfile):
 	for line in DnsFile:
 		line = line.strip('\n')
 		#avoid top of the file and the space
-		if len(line)<2:
+		if len(line)<7:
 			continue
 		else:
-			if 'IP Source              Dns Server ' in line :
+			if 'IP Source' in line :
 				continue
 		line = line.strip()
 		line_parameter = line.split()
