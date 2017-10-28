@@ -2,7 +2,7 @@
 #source :https://iplists.firehol.org
 #source ID:1
 #IP type
-#date:2017-10-26
+#date:2017-10-27
 
 import urllib2
 import re
@@ -106,7 +106,7 @@ if __name__ == '__main__':
 	global COUNT
 	GetThePage('http://iplists.firehol.org/all-ipsets.json','data','20170925','json')
 	global page
-	DisposePage('data_20170925.json')
+	DisposePage('0.html')
 	global thnum
 
 	for i in xrange(0,10):
@@ -161,7 +161,7 @@ if __name__ == '__main__':
 						cursor.execute("REPLACE INTO ip_table(ip,update_time,source,stamp) VALUES('%s','%s','%s','%s')" % (ip,update_time,source_id,stamp))
 		db.commit()
 		db.close()
-	s.append('data_20170925.json')
+	s.append('0.html')
 	s.append('FILE.txt')
 
 	PATH = os.getcwd()
